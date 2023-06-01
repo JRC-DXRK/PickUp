@@ -27,41 +27,99 @@ body{
   overflow-y: hidden;
   overflow-x: hidden;
 }
+
+
+
+
 #forYou{
-display: flex;
-width: 100vw;
-height: 100vh;
-flex-direction: column;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 57px 28px 0px 28px;
 }
+
+
+
+
 #header{
   width: 100%;
-  height: 15%;
+  height: 12.5%;
   color: white;
-  padding: 15px;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'Inter', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 600;
 }
+
+
+#search{
+  flex-direction: row;
+  width: 100%;
+  height: 12.5%;
+  padding-left: 25px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #AAAAAAAA;
+  
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+
 #content{
   width: 100%;
   height: 70%;
   color: white;
-  padding: 15px;
 }
+#content h1{
+  font-size: 28px;
+}
+#nearYouSportSelector{
+  border-radius: 20px;
+  padding: 5px 15px;
+  background-color: #555555AA;
+  border: 1px solid white;
+  text-align: center;
+  width: fit-content;
+}
+#nearYouSportSelector ul{
+  list-style-type: none;
+}
+u:hover{
+  cursor: pointer;
+}
+li{
+  border-radius: 20px;
+  transition: 0.27s;
+  margin: 10px 0px;
+}
+li:hover{
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: #222222AA;
+  transition: 0.27s;
+}
+u:hover #nearYouSportSelector{
+  display: block;
+}
+
+
 #nav{
   width: 100%;
-  height: 15%;
+  height: 10%;
   flex-direction: row;
   justify-content: space-evenly;
   color: #DA0083;
   padding: 15px;
-  font-family: 'Inter', sans-serif;
   font-size: 12px;
-  font-weight: 400;
 }
 
-@media (max-width: 450px) and (orientation: portrait){
+@media (min-width: 451px) and (orientation: landscape){
   
 }
